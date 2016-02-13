@@ -1,6 +1,8 @@
 Documentation
 -------------------
 IncrementalNumber is a JQuery library for anyone who wants an Incremental animation of a number.
+<br> 
+For examples view index.html
 
 <h1>How to use</h1>
 
