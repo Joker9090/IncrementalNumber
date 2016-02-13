@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IncrementalNumber</title>
+    <script src="js/jquery-2.2.0.js"></script>
+    <script type="text/javascript" src="js/incrementalNumber.js"> </script>
+    <style media="screen">
+      p { line-height: 20px;}
+      hr.half { width: 50%; margin: 0 auto; }
+      div.codeBox {
+        margin:15px;
+        background-color: #D0D0D0;
+        border: 1px dashed black;
+        min-height: 50px;
+        padding: 10px;
+        color: #3C83A2;
+      }
+    </style>
+  </head>
+  <body>
+      <h1>IncrementalNumber</h1>
+      <p>
+        IncrementalNumber is a <b>JQuery</b> library for anyone who wants
+        an Incremental animation of a number.
+      </p>
+      <hr class="half"/>
+      <h2> How to use </h2>
+      <p>
+        First you have to add the script incrementalNumber.js to your code. <br />
+        Next, simply add the class <i><b>incrementalNumber</b></i> to the tag of the number. <br />
+        This will search for all de tags with this class. <br />
+        Finally you have to pass the number as a parameter in <i><b>data-value</b></i> attr.  <br />
+        Dont forget to call the function <i><b>incrementalNumber</b></i> when the document is ready!
+      </p>
+      <div class="codeBox">
+        <p>
+          &lt;span class="incrementalNumber" data-value="100"&gt;&lt;/span&gt;
+          <br><br>
+          &lt;script type="text/javascript"&gt; <br>
+            &nbsp;$(document).ready(function(){ <br>
+            &nbsp;&nbsp;incrementalNumber(); <br>
+            &nbsp;}); <br>
+          &lt;/script&gt; <br>
+        </p>
+      </div>
+      <p> Example: <span class="incrementalNumber" data-value="100" ></span></p>
+      <hr class="half"/>
+      <h2> Options </h2>
+      <p>
+        If the number is to big, you can add the parameter <i><b>big-Number</b></i> and de count start 10% less the total. <br>
+      </p>
+      <div class="codeBox">
+        &lt;span class="incrementalNumber" big-number data-value="2123"&gt;&lt;/span&gt;
+      </div>
+      <p> Example: <span class="incrementalNumber" big-number data-value="2123" ></span></p>
+
+      <p>
+        If the number is more big, you can especificate the start number like this: <br>
+      </p>
+      <div class="codeBox">
+        &lt;span class="incrementalNumber" big-number="19800" data-value="20000"&gt;&lt;/span&gt;
+      </div>
+      <p> Example: <span class="incrementalNumber" big-number="19800" data-value="20000" ></span></p>
+
+      <p>
+        You can add text to the end with the parameter <i><b>set-text</b></i> <br>
+      </p>
+      <div class="codeBox">
+        &lt;span class="incrementalNumber" set-text="%" data-value="100"&gt;&lt;/span&gt;
+      </div>
+      <p> Example: <span class="incrementalNumber" set-text="%" data-value="100"></span></p>
+
+      <p>
+        The last option can set the total time of the "animate" with <i><b>set-time</b></i> in ms <br>
+      </p>
+      <div class="codeBox">
+        &lt;span class="incrementalNumber" set-time="3000" data-value="100"&gt;&lt;/span&gt;
+      </div>
+      <p> Example: <span class="incrementalNumber" set-time="3000" data-value="100"></span></p>
+      <p>
+        <i>
+           If the numer is to big, this may not work. You have to use big-number also to make it.
+        </i>
+      </p>
+      <hr class="half"/>
+      <p>
+        This is all. Hope you like it. <br><br><br>
+        Barto!
+      </p>
+  </body>
+</html>
+<script type="text/javascript">
+  $(document).ready(function(){
+    incrementalNumber();
+  });
+</script>
