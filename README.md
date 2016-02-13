@@ -2,11 +2,11 @@ Documentation
 -------------------
 IncrementalNumber is a JQuery library for anyone who wants an Incremental animation of a number.
 
-<h1>How to use<h1>
+<h1>How to use</h1>
 
-Download and add to your code <h4>Jquery</h4>.
-Download and add to your code <h4>incrementalNumber.js</h4>
-Run function <h5>incrementalNumber()</h5> when document ready.
+Download and add to your code <b>Jquery</b>.
+Download and add to your code <b>incrementalNumber.js</b>
+Run function <b>incrementalNumber()</b> when document ready.
 Options
 
 If the number is to big, you can add the parameter big-Number and de count start 10% less the total. 
