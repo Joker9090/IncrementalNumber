@@ -1,24 +1,12 @@
-IncrementalNumber
-
+Documentation
+-------------------
 IncrementalNumber is a JQuery library for anyone who wants an Incremental animation of a number.
 
-How to use
+<h1>How to use<h1>
 
-First you have to add the script incrementalNumber.js to your code. 
-Next, simply add the class incrementalNumber to the tag of the number. 
-This will search for all de tags with this class. 
-Finally you have to pass the number as a parameter in data-value attr. 
-Dont forget to call the function incrementalNumber when the document is ready!
-
-<span class="incrementalNumber" data-value="100"></span> 
-
-<script type="text/javascript"> 
- $(document).ready(function(){ 
-  incrementalNumber(); 
- }); 
-</script> 
-Example: 100
-
+Download and add to your code <h4>Jquery</h4>.
+Download and add to your code <h4>incrementalNumber.js</h4>
+Run function <h5>incrementalNumber()</h5> when document ready.
 Options
 
 If the number is to big, you can add the parameter big-Number and de count start 10% less the total. 
